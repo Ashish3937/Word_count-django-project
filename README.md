@@ -17,3 +17,6 @@ Once you have downloaded the project go inside the project directory and run the
 
 In the logic file:
 I have also appended the stop words with additional words and special characters.
+For testing the project I have included the file 'test.txt'.To test the project with some other file rename your file as test and replace the original file.
+
+Relevant comments are also added in the code logic.py
