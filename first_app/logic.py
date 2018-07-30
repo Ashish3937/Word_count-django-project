@@ -7,13 +7,13 @@ nltk.download('stopwords')
 BASE2 = os.path.dirname(os.path.abspath(__file__))
 
 
-
+##Open the file text.txt
 with open(os.path.join(BASE2, "test.txt"),'r') as f:
     f_contents=f.read()
-
+## Load the stop words
 stop_words = nltk.corpus.stopwords.words('english')
 numbers_list=[str(num) for num in range(0,30)]
-
+## ADD adiitional words to stop words
 new_words=[',','.','.','I','Is','(',')','?','@','You',':','"','1.',"''",'what','we','12.','if','how',"if",'where','If','How','What',';','Where','When','"','We','Select','Who','us','Can','hi']
 stop_words.extend(new_words)
 stop_words.extend(numbers_list)
@@ -23,7 +23,7 @@ filtered_words = [w for w in word_tokens if not w in stop_words]
 
 filtered_lower=[x.lower() for x in filtered_words]
 
-
+#Function to count the number of occurences 
 def countX(lst, x):
     count = 0
     for ele in lst:
@@ -37,6 +37,8 @@ for word in filtered_lower:
 sorted_by_value = sorted(word_dict.items(), key=lambda kv: kv[1])
 sorted_by_value.reverse()
 
+
+#Main function
 def show(m):
     n=int(m)
     if n>len(sorted_by_value):
