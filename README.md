@@ -13,3 +13,7 @@ The "logic.py" file contains the method "show()" which is called to derive the r
 Then a python dictionary was used to store the words according to their number of occurences.
 
 Once you have downloaded the project go inside the project directory and run the following command "python manage.py runserver" and copy the generated link in the browser.
+
+
+In the logic file:
+I have also appended the stop words with additional words and special characters.
