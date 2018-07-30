@@ -40,7 +40,7 @@ sorted_by_value.reverse()
 def show(m):
     n=int(m)
     if n>len(sorted_by_value):
-        n=sorted_by_value
+        n=len(sorted_by_value)
     return_list=[]
     for i in range(0,n):
         return_list.append(sorted_by_value[i])
